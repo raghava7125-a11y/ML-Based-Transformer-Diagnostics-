@@ -18,7 +18,7 @@ Power transformers are the critical backbone of modern electrical grids, but in 
 - **Data Engineering:** Python, Pandas, NumPy
 - **Machine Learning:** Scikit-Learn (Random Forest Regressor, Isolation Forest)
 - **Visualization:** Matplotlib
-- **Development Environment:** Jupyter Notebook
+- **Development Environment:** Google Colab
 
 ## 🌐 Domain Applications
 - Power Systems & Smart Grids
