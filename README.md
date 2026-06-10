@@ -18,7 +18,7 @@ Power transformers are the critical backbone of modern electrical grids, but in 
 - **Data Engineering:** Python, Pandas, NumPy
 - **Machine Learning:** Scikit-Learn (Random Forest Regressor, Isolation Forest)
 - **Visualization:** Matplotlib
-- **Development Environment:** Jupyter Notebook
+- **Development Environment:** Google Colab
 
 ## 🌐 Domain Applications
 - Power Systems & Smart Grids
@@ -31,15 +31,12 @@ The model processes operational transformer data representing various load condi
 - **Thermal Parameters:** Top Oil Temperature (TOT) and Winding Temperature Indicator (WTI) metrics.
 - **Engineered Features:** Calculated Copper Losses ($I^2R$), fixed Core Losses, and theoretical operational efficiency formulas utilized to train baseline performance benchmarks.
 
-## 📈 Key Results & Visualizations
-*(Note: Replace these placeholders with your actual screenshots from the `images/` folder once your Jupyter Notebook runs successfully.)*
+📈 Key Results & Visualizations
+(Note: Replace these placeholders with your actual screenshots from the images/ folder once your Colab Notebook runs successfully.)
 
-1. **Efficiency Prediction (Regression):** The `RandomForestRegressor` tracks non-linear electrical behaviors, accurately mapping the peak efficiency curve against varying load factors.
-![Efficiency Curve](images/efficiency_curve.png)
+DGA Ratio Mapping (Exploratory Data Analysis): Mapped standard industry Dissolved Gas Analysis (DGA) ratios to visually cluster transformer thermal states, clearly distinguishing between safe baseline operations and degraded zones (e.g., low-temperature heating vs. high-energy arcing).
 
-2. **Anomaly Detection (Isolation Forest):** The model isolates anomalous states (such as sudden thermal overshoots relative to output power) without requiring labeled failure logs.
-![Anomaly Detection Scatter Plot](images/anomalies_plot.png)
-
+Unsupervised Fault Isolation (Isolation Forest): Deployed a multi-dimensional anomaly detection algorithm to autonomously flag irregular chemical signatures. This pipeline successfully acts as an early warning predictive maintenance system without relying on historically labeled failure logs.
 ## 📂 Repository Structure
 ```text
 ├── data/
@@ -47,6 +44,6 @@ The model processes operational transformer data representing various load condi
 ├── notebooks/
 │   └── transformer_prediction.ipynb       # Main ML pipeline & EDA
 ├── images/
-│   ├── efficiency_curve.png               # Visual plots for README documentation
+│   ├── dga_ratio_plot.png              # Visual plots for README documentation
 │   └── anomalies_plot.png                 
 └── README.md                              # Main project documentation
