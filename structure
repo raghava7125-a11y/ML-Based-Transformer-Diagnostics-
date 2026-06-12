@@ -1,0 +1,20 @@
+ML-Based-Transformer-Diagnostics/
+│
+├── data/
+│   └── transformer_data.csv
+│
+├── notebooks/
+│   └── transformer_analysis.ipynb
+│
+├── src/
+│   ├── data_preprocessing.py
+│   ├── train_model.py
+│   └── evaluate_model.py
+│
+├── results/
+│   ├── accuracy_plot.png
+│   ├── loss_curve.png
+│   └── confusion_matrix.png
+│
+├── requirements.txt
+└── README.md
